@@ -9,8 +9,9 @@ public class Hw3_3 {
 //		讓阿文可以輸入他不想要的數字(1~9),畫面會顯示他可以選擇的號碼與總數,如圖:
 	
 
-		int hatenum = 0;
-		
+		int hatenum = 0,i = 0;
+
+		System.out.print("阿文請輸入你討厭的數字0 ~ 9：");
 		Scanner sc = new Scanner(System.in);		
 		if(sc.hasNextInt()) {
 			hatenum = sc.nextInt();
