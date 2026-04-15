@@ -12,7 +12,7 @@ public class Hw3_2 {
 		
 
 		System.out.println("開始猜數字吧！");			
-		int randomnum = (int) Math.random() * 10;
+		int randomnum = (int) (Math.random() * 10);
 		
 		
 		for(int i = 0; i <= 10; i++) {
