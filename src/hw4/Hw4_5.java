@@ -23,23 +23,31 @@ public class Hw4_5 {
 		}
 		if(arr[0] % 4 != 0 && arr[0] % 100 == 0 && arr[1] == 2 && arr[2] >28) {
 			System.out.print("Error!");
-		}else {
+		}
+		else if(arr[1] % 2 == 0)
+		if(arr[1] < 1 || arr[1] > 12 || arr[2] < 1 || arr[2] > 30) {
+			System.out.print("Error!");			
+		}
+		else if(arr[1] < 1 || arr[1] > 12 || arr[2] < 1 || arr[2] > 31) {
+			System.out.print("Error!");			
+		}
+		else {
 			for(int i = 1; i < arr[1]; i++) {
 				if(arr[1] % 2 == 0 && arr[1] != 2) {
 					day =day + 30;
 				}
-				else if(arr[1] == 2) {
+				else if(arr[1] == 2 && arr[0] % 4 != 0 ) {
 					day = day +28;
 				}
 				else if(arr[1] == 2 && arr[0] % 4 == 0 && arr[0] % 100 != 0 ) {
 					day = day + 29;
 				}
-				else {
+				else if(arr[2] <= 31){
 					day =day +31;
 				}
 			}
 			day =day + arr[2];
+			System.out.print(day);
 		}
-		System.out.print(day);
 	}
 }
